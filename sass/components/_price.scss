@@ -1,0 +1,47 @@
+.price {
+	padding: 50px 0 50px 0;
+	background-color: $section-bg;
+	border-bottom: 2px solid $border-line;
+	.price-row {
+		padding-top: 20px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.price-box {
+			background-color: #fff;
+			width: 250px;
+			border-radius: 5px;
+			text-align: center;
+			.line {
+				@include line(2px, $btn-bg-text, 10px);
+			}
+
+			h4 {
+				font-weight: lighter;
+			}
+
+			h1 {
+				margin-bottom: 0;
+			}
+
+			p:nth-child(3) {
+				font-size: 12px;
+				margin: 0;
+				padding-bottom: 10px;
+				text-transform: uppercase;
+				color: $btn-bg-text;
+				font-weight: lighter;
+			}
+
+			p {
+				font-size: 12px;
+				font-weight: bold;
+				color: $price-text;
+			}
+			button {
+				margin: 20px 0 20px 0;
+				@include btn(#000);
+			}
+		}
+	}
+}

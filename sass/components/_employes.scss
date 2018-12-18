@@ -1,0 +1,46 @@
+.employes {
+	position: relative;
+	padding-top: 50px;
+	background-position: center;	
+	background-image: url('../images/bg1.png');	
+	height: 60vh;
+	overflow: hidden;	
+	width: 100%;
+	background-size: cover;
+	text-align: center;
+	p {
+		color: #fff;
+	}
+	.employe-row {
+		padding-top: 50px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.employe {
+			background-color: #fff;
+			border-radius: 5px;
+			margin: 0 auto;
+			padding: 40px;
+			h1, h4 {
+				text-align: center;
+			}
+			.icons {
+				i {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background-color: $btn-bg-text;
+					&:hover{
+						cursor: pointer;
+						background-color: $primary;
+						transition-duration: .25s;
+					}
+				}
+				.fab, .fas {
+					padding-top: 12px;
+					text-align: center;					
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.share {
+	padding: 20px 0 20px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-bottom: 2px solid $border-line;
+	border-top: 2px solid $border-line;
+	.icons {
+
+		span {
+			padding: 0 20px 0 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 12px;
+			color: $btn-bg-text;
+		}
+
+		.twit {
+			background-color: #34c5f0;
+		}
+
+		.face {
+			background-color: #336297;
+		}
+
+		.link {
+			background-color: #127cb4;
+		}
+
+		.google {
+			background-color: #e74237;
+		}
+
+		.pint {
+			background-color: #b71c29;
+		}
+
+		i {
+			color: #fff;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;		
+
+			&:hover {
+				cursor: pointer;
+				background-color: $primary;
+				transition-duration: .25s;
+			}
+		}
+		.fab, .fas {
+			padding-top: 12px;
+			text-align: center;					
+		}
+	}
+}

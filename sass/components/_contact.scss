@@ -1,0 +1,54 @@
+.contact {
+	padding: 50px 0 50px 0;
+	background-color: $section-bg;
+	.contact-row {
+		padding-top: 50px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		
+		input {
+			background-color: $section-bg;
+			outline: none;
+			color: $btn-bg-text;
+			font-weight: bold;
+			border: none;
+			border-bottom: 2px solid $btn-bg-text;
+			width: 300px;
+			margin: 10px;					
+		}
+
+		.name {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+
+		.msg {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-direction: column;
+			input {
+				width: 620px;	
+			}
+
+			.subject {
+				margin-top: 30px;
+			}
+
+			.massage {
+				margin-top: 50px;
+			}
+		}
+	}
+	.buttons {
+		display: flex;
+		justify-content: center;
+		padding: 50px 0 50px 0;
+		button {
+			@include btn($primary);
+		}
+	}
+}

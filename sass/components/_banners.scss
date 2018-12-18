@@ -1,0 +1,8 @@
+.banners {
+	border-top: 2px solid $border-line;
+	border-bottom: 2px solid $border-line;
+	padding: 20px 0 20px 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}

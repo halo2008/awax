@@ -1,0 +1,49 @@
+.about {	
+	padding-top: 50px;
+	background-color: $section-bg;
+
+	.about-content {
+		display: flex;
+		justify-content: space-around;		
+		margin: 0 ;			
+		padding: 100px;	
+
+		.text-item {			
+  			text-align: left;
+  			padding: 0 50px;
+
+  			p {
+				margin-bottom: 50px;
+  			}
+		}
+		.video-item {
+			width: 50%;
+		}
+	}
+	button {
+		@include btn($primary);
+	}
+}
+
+@media screen and (max-width: 1280px) { 
+	.about {
+		.about-content { 
+			padding: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 998px) { 
+	.about {
+		.about-content { 
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		button {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

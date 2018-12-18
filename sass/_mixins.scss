@@ -1,0 +1,18 @@
+@mixin btn($bg-color) {
+	text-align: center;
+	text-transform: uppercase;	
+	font-weight: bold;
+	padding: 15px 30px 15px 30px;
+	border-radius: 50px;
+	font-size: 12px;
+	border: none;
+	background-color: $bg-color;
+	color: #fff;
+	cursor: pointer;
+}
+
+@mixin line($height-line, $color, $width){
+	margin: 0 auto;
+	border-bottom: $height-line solid $color;
+	width: $width;
+}

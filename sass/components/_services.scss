@@ -1,0 +1,37 @@
+.services {
+	padding-top: 50px;
+	background-color: #000;
+	p {
+		margin: 0;		
+		color: #fff;
+	}
+	.box-wrap {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 50px;
+		.box {
+			max-width: 300px;
+			padding: 20px;
+			border-left: 1px solid $border;
+			border-right: 1px solid $border;
+			text-align: center;
+
+			img {
+				padding-bottom: 50px;
+			}
+
+			p {
+				color: #fff;
+				font-size: 24px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			p:nth-child(3){
+				color: $btn-bg-text;
+				font-size: 12px;
+				font-weight: lighter;
+			}
+		}
+	}
+}

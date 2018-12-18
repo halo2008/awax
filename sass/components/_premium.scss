@@ -1,0 +1,40 @@
+.premium {
+	padding: 50px 0 50px 0;
+	position: relative;
+	.premium-box {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 50px;
+		border-bottom: 1px solid $border-line;
+		width: 80%;
+		margin: 0 auto;
+		.premium-box2 {
+			span {
+				font-weight: bold;
+				font-size: 24px;
+			}
+			.premium-head {
+				img {
+					margin-top: 10px;
+				}
+			}
+
+			.premium-text {
+				margin-left: 40px;
+				color:$btn-bg-text;
+			}
+		}		
+	}
+	.buttons {
+		padding-top: 80px;
+		display: flex;
+		justify-content: center;
+		button {
+			@include btn($primary);
+		}
+	}
+	.slider-dot {
+		bottom: 70px;
+	}
+}
