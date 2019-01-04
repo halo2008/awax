@@ -1,10 +1,9 @@
 .employes {
 	position: relative;
 	padding-top: 50px;
-	background-position: center;	
-	background-image: url('../images/bg1.png');	
-	height: 60vh;
-	overflow: hidden;	
+	background-position: center;
+	background-image: url('../images/bg1.png');
+	overflow: hidden;
 	width: 100%;
 	background-size: cover;
 	text-align: center;
@@ -20,6 +19,7 @@
 			background-color: #fff;
 			border-radius: 5px;
 			margin: 0 auto;
+			margin: 5px;
 			padding: 40px;
 			h1, h4 {
 				text-align: center;
@@ -38,7 +38,7 @@
 				}
 				.fab, .fas {
 					padding-top: 12px;
-					text-align: center;					
+					text-align: center;
 				}
 			}
 		}

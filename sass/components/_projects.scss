@@ -5,6 +5,7 @@
 
 	nav {
 		padding-top: 50px;
+
 		ul {
 			margin-top: 10px;
 			height: 70px;
@@ -12,18 +13,18 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			background-color: $btn-bg-text;
-			width: 650px;
+			max-width: 650px;
 			list-style-type: none;
 			margin: 0 auto;
 			border-radius: 50px;
 			padding: 0;
 			li{
 				margin-top: 25px;
-				
+
 				a {
 					padding: 20px;
 					text-transform: uppercase;
-					color: #000;					
+					color: #000;
 					text-decoration: none;
 					border-right: 1px solid #fff;
 				}
@@ -40,7 +41,7 @@
 	}
 
 	.gallery {
-		padding-top: 40px;
+		padding-top: 50px;
 		.gallery-row{
 			display: flex;
 			justify-content: center;
@@ -49,20 +50,20 @@
 				padding-top: 40px;
 			}
 			.gallery-photo{
-				padding: 10px;				
+				padding: 10px;
 				position: relative;
-				
-				&:hover .layer {					
+
+				&:hover .layer {
 					visibility: visible;
-					
+
 					p:nth-child(1) {
 						margin-left: 0px;
 					}
 					p:nth-child(2) {
 						margin-right: 0px;
 					}
-				}				
-				
+				}
+
 				.layer {
 					background-color: rgba(0, 0, 0, .5);
 					width: 255px;
@@ -88,13 +89,35 @@
 					}
 					&:hover {
 						visibility: visible;
-					}	
-				}				
+					}
+				}
 			}
 		}
 	}
 
 	button {
 		@include btn($primary);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.projects {
+		nav {
+			position: relative;
+			ul {
+				margin: 0;
+				border-radius: 0;
+				background-color: $section-bg;
+				li {
+						margin: 0;
+						display: flex;
+						justify-content: center;
+						background-color:  $btn-bg-text;
+						a {
+							padding: 5px;
+						}
+				}
+			}
+		}
 	}
 }

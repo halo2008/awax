@@ -44,8 +44,10 @@ html, body {
 .slider-dot {
   padding: 50px 0;
   left: 48%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   bottom: 0;
 }
 
@@ -67,9 +69,12 @@ html, body {
 
 .header .menu {
   background-color: #000;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
   height: 100%;
 }
 
@@ -78,8 +83,10 @@ html, body {
 }
 
 .header .menu ul {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   list-style-type: none;
 }
 
@@ -155,8 +162,10 @@ html, body {
   }
   .header .menu ul {
     margin-top: 200px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     margin: 0 auto;
   }
   .header .menu ul li {
@@ -214,8 +223,10 @@ html, body {
 }
 
 .about .about-content {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
   padding: 100px;
 }
@@ -254,14 +265,19 @@ html, body {
 
 @media screen and (max-width: 998px) {
   .about .about-content {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .about button {
     margin: 0 auto;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
 
@@ -276,9 +292,12 @@ html, body {
 }
 
 .services .box-wrap {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px;
 }
 
@@ -320,9 +339,12 @@ html, body {
 .projects nav ul {
   margin-top: 10px;
   height: 70px;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-color: #aeaeae;
   max-width: 650px;
   list-style-type: none;
@@ -356,9 +378,12 @@ html, body {
 }
 
 .projects .gallery .gallery-row {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects .gallery .gallery-row .btn-pos {
@@ -437,8 +462,10 @@ html, body {
   }
   .projects nav ul li {
     margin: 0;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
     background-color: #aeaeae;
   }
   .projects nav ul li a {
@@ -463,9 +490,12 @@ html, body {
 
 .employes .employe-row {
   padding-top: 50px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .employes .employe-row .employe {
@@ -533,9 +563,12 @@ html, body {
   border-top: 2px solid #e4e4e4;
   border-bottom: 2px solid #e4e4e4;
   padding: 20px 0 20px 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .price {
@@ -546,9 +579,12 @@ html, body {
 
 .price .price-row {
   padding-top: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .price .price-row .price-box {
@@ -608,9 +644,12 @@ html, body {
 }
 
 .premium .premium-box {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 50px;
   border-bottom: 1px solid #e4e4e4;
   width: 80%;
@@ -633,8 +672,10 @@ html, body {
 
 .premium .buttons {
   padding-top: 80px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .premium .buttons button {
@@ -665,9 +706,12 @@ html, body {
 
 .facts .facts-row {
   padding-top: 20px;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
@@ -700,9 +744,12 @@ html, body {
 
 .share {
   padding: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 2px solid #e4e4e4;
   border-top: 2px solid #e4e4e4;
 }
@@ -765,9 +812,12 @@ html, body {
 
 .contact .contact-row {
   padding-top: 50px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact .contact-row input {
@@ -782,16 +832,23 @@ html, body {
 }
 
 .contact .contact-row .name {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contact .contact-row .msg {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .contact .contact-row .msg input {
@@ -814,8 +871,10 @@ html, body {
 }
 
 .contact .buttons {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 50px 0 50px 0;
 }
 
@@ -853,9 +912,12 @@ html, body {
   height: 300px;
   background-color: #fff;
   padding: 20px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-radius: 5px;
 }
 
@@ -869,6 +931,7 @@ html, body {
 .maps .map-box .map-row {
   padding: 5px 0 5px 0;
   padding: 5px;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -876,8 +939,10 @@ html, body {
   padding: 10px;
   font-size: 14px;
   color: #7e7e7e;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .maps .map-box .map-row i {
@@ -910,10 +975,14 @@ html, body {
 .footer {
   position: relative;
   background-color: #000;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .footer .up {
@@ -955,13 +1024,16 @@ html, body {
 }
 
 .footer .footer-container {
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 768px) {
   .footer .footer-container {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -986,9 +1058,12 @@ html, body {
 @media screen and (max-width: 768px) {
   .footer .footer-container .footer-box .icons {
     margin-left: 0;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1018,8 +1093,10 @@ html, body {
 
 @media screen and (max-width: 768px) {
   .footer .footer-container .footer-box .copyright {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 auto;
   }
 }
@@ -1032,11 +1109,14 @@ html, body {
   margin-top: 50px;
   max-width: 300px;
   max-height: 300px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background-color: #373737;
   border-radius: 5px;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1139,8 +1219,10 @@ html, body {
 }
 
 #modal-phone .modal-container .buttons {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding: 20px 0 20px 0;
 }
 
@@ -1170,13 +1252,15 @@ html, body {
 }
 
 #modal-phone .modal-container .name {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */

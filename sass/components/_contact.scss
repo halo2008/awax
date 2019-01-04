@@ -6,7 +6,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		
+
 		input {
 			background-color: $section-bg;
 			outline: none;
@@ -15,14 +15,13 @@
 			border: none;
 			border-bottom: 2px solid $btn-bg-text;
 			width: 300px;
-			margin: 10px;					
+			margin: 10px;
 		}
 
 		.name {
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
-			flex-direction: row;
 		}
 
 		.msg {
@@ -31,7 +30,11 @@
 			flex-wrap: wrap;
 			flex-direction: column;
 			input {
-				width: 620px;	
+				width: 620px;
+				@media screen and (max-width: 540px) {
+					width: 300px;
+					margin: 0 auto;
+				}
 			}
 
 			.subject {
