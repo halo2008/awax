@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>Awax</title>
@@ -32,9 +33,9 @@
 		<section>
 		<div class="container">
 			<div class="header">
-				<div class="menu">
-					<ul>
-						<li><img src="./images/Logo.png"></li>
+				<div class="menu" id="menu">
+					<ul class="hide">
+						<li id="hamburger"><img src="./images/Logo.png"></li>
 						<li><a href="#home" class="acitve">home</a></li>
 						<li><a href="#about">about us</a></li>
 						<li><a href="#services">services</a></li>
@@ -171,8 +172,6 @@
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="gallery-row">
 						<div class="gallery-photo">
 							<a href="#">
 								<img src="./images/img5.png">
@@ -209,8 +208,7 @@
 								</div>
 							</a>
 						</div>
-					</div>
-					<div class="gallery-row">
+
 						<div class="gallery-photo">
 							<a href="#">
 								<img src="./images/img9.png">
@@ -248,11 +246,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="gallery-row">
-						<div class="btn-pos">
-							<button>more projects</button>
-						</div>
-					</div>
+				</div>
+				<div class="buttons">
+					<button>more projects</button>
 				</div>
 			</div>
 		</div>
@@ -507,18 +503,32 @@
 		<div class="container">
 			<div class="share">
 				<div class="icons">
-					<img src="./images/Share.png">
-					<span>tell about us:</span>
-					<i class="twit fab fa-twitter"></i>
-					<span>152</span>
-					<i class="link fab fa-linkedin-in"></i>
-					<span>31</span>
-					<i class="face fab fa-facebook-f"></i>
-					<span>165</span>
-					<i class="google fab fa-google-plus-g"></i>
-					<span>22</span>
-					<i class="pint fab fa-pinterest-p"></i>
-					<span>165</span>
+					<div>
+						<img src="./images/Share.png">
+					</div>
+					<div class="span-text">
+						<span>tell about us:</span>
+					</div>
+					<div>
+						<i class="twit fab fa-twitter"></i>
+						<span>152</span>
+					</div>
+					<div>
+						<i class="link fab fa-linkedin-in"></i>
+						<span>31</span>
+					</div>
+					<div>
+						<i class="face fab fa-facebook-f"></i>
+						<span>165</span>
+					</div>
+					<div>
+						<i class="google fab fa-google-plus-g"></i>
+						<span>22</span>
+					</div>
+					<div>
+						<i class="pint fab fa-pinterest-p"></i>
+						<span>165</span>
+					</div>
 				</div>
 			</div>
 		</div>

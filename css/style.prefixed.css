@@ -14,13 +14,7 @@ html, body {
 
 .container {
   margin: 0 auto;
-  width: 90%;
-}
-
-@media screen and (max-width: 1280px) {
-  .container {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .head-paragraph {
@@ -75,11 +69,11 @@ html, body {
       justify-content: center;
   -ms-flex-direction: row;
       flex-direction: row;
-  height: 100%;
+  height: 65px;
 }
 
 .header .menu img {
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .header .menu ul {
@@ -88,16 +82,21 @@ html, body {
   -ms-flex-direction: row;
       flex-direction: row;
   list-style-type: none;
+  margin: 5px 0 5px;
+}
+
+.header .menu ul li {
+  line-height: 50px;
 }
 
 .header .menu ul li a {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0 10px 49px 10px;
+  padding: 0px 10px 23px 10px;
 }
 
 .header .menu ul li a.acitve, .header .menu ul li a:hover {
@@ -157,6 +156,17 @@ html, body {
 }
 
 @media screen and (max-width: 998px) {
+  .header .hide ul li:nth-child(n+2) {
+    transform: translateY(-270px);
+    transition: .9s ease-out;
+    display: none;
+  }
+  .header .header-slider {
+    padding-top: 10vh;
+  }
+  .header .menu {
+    height: 100%;
+  }
   .header .menu img {
     padding: 0;
   }
@@ -169,6 +179,7 @@ html, body {
     margin: 0 auto;
   }
   .header .menu ul li {
+    line-height: 15px;
     margin: 5px;
     text-align: center;
   }
@@ -263,6 +274,12 @@ html, body {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .about .about-content .text-item {
+    padding: 0 5px;
+  }
+}
+
 @media screen and (max-width: 998px) {
   .about .about-content {
     display: -ms-flexbox;
@@ -311,6 +328,12 @@ html, body {
 
 .services .box-wrap .box img {
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 680px) {
+  .services .box-wrap .box img {
+    padding-bottom: 5px;
+  }
 }
 
 .services .box-wrap .box p {
@@ -374,6 +397,8 @@ html, body {
 }
 
 .projects .gallery {
+  max-width: 1980px;
+  margin: 0 auto;
   padding-top: 50px;
 }
 
@@ -436,6 +461,14 @@ html, body {
 
 .projects .gallery .gallery-row .gallery-photo .layer:hover {
   visibility: visible;
+}
+
+.projects .buttons {
+  padding-top: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .projects button {
@@ -744,18 +777,22 @@ html, body {
 
 .share {
   padding: 20px;
+  border-bottom: 2px solid #e4e4e4;
+  border-top: 2px solid #e4e4e4;
+}
+
+.share .icons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-bottom: 2px solid #e4e4e4;
-  border-top: 2px solid #e4e4e4;
 }
 
-.share .icons img {
-  line-height: 4px;
+.share .icons img,
+.share .icons .span-text {
+  margin-top: 15px;
 }
 
 .share .icons span {

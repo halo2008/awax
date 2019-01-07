@@ -1,3 +1,18 @@
+var viewPortWidth = window.innerWidth || document.documentElement.clientWidth;
+
+if (viewPortWidth < 998) {
+	document.getElementById('menu').classList.add('hide');
+	document.getElementById('hamburger').addEventListener('click', function(){
+		document.querySelector('.menu').classList.toggle('hide');
+	})
+}
+
+else {
+	document.getElementById('menu').classList.remove('hide');
+}
+
+
+
 
 document.getElementById('up').addEventListener('click', function() {
 	document.querySelector('.header').scrollIntoView({

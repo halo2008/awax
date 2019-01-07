@@ -1,14 +1,14 @@
 .share {
 	padding: 20px;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
 	border-bottom: 2px solid $border-line;
 	border-top: 2px solid $border-line;
 	.icons {
-
-		img {
-			line-height: 4px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		img,
+		.span-text  {
+			margin-top: 15px;
 		}
 
 		span {

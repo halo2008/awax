@@ -41,11 +41,14 @@
 	}
 
 	.gallery {
+		max-width: 1980px;
+		margin: 0 auto;
 		padding-top: 50px;
-		.gallery-row{
+		.gallery-row {			
 			display: flex;
 			justify-content: center;
 			flex-wrap: wrap;
+
 			.btn-pos {
 				padding-top: 40px;
 			}
@@ -94,7 +97,11 @@
 			}
 		}
 	}
-
+	.buttons {
+		padding-top: 80px;
+		display: flex;
+		justify-content: center;
+	}
 	button {
 		@include btn($primary);
 	}

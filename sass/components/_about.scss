@@ -70,6 +70,16 @@
 	}
 }
 
+@media screen and (max-width: 550px) {
+	.about {
+		.about-content {
+			.text-item {
+					padding: 0 5px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 998px) {
 	.about {
 		.about-content {
